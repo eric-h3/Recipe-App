@@ -2,8 +2,11 @@
 This is a recipe sharing web application. The goal of the website is to create a place where millions of users can interact, discover, and create custom recipes for each other. An added feature is that recipes can be added to shopping lists in which ingredients are combined for purchasing.
 ## Prerequisites
 
+- Ubuntu
 - Node.js
 - npm
+- pip
+- python 3.10
 
 ## Installation
 
