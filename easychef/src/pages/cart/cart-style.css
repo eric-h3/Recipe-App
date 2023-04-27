@@ -1,0 +1,14 @@
+html, body {
+    background-color: #eee;
+    min-width: 500px;
+}
+
+img{
+    max-width:150px;
+    max-height: 120px;
+}
+
+.navbar-nav.me-auto li a {
+    color: white
+}
+

@@ -1,0 +1,160 @@
+/* https://bbbootstrap.com/snippets/news-card-animation-28849510 */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+}
+
+.hero-image {
+  width: 100%;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 50px;
+}
+h1{
+    text-align: center;
+    color: #333333;
+}
+.cardcontainer{
+    width: 330px;
+    height: 500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+    flex-basis: 350px
+}
+.cardcontainer:hover{
+    box-shadow: 0 0 45px gray;
+}
+#recipelink {
+    background-color: orangered;
+    position: relative;
+    top: 20px;
+}
+.photo{
+    height: 300px;
+    width: 100%;
+}
+.photo img{
+    height: 100%;
+    width: 100%;
+}
+.txt1{
+    margin: auto;
+    text-align: center;
+    font-size: 17px;
+}
+.content{
+    width: 80%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -33px;
+}
+.photos{
+    width: 90px;
+    height: 30px;
+    background-color: #E74C3C;
+    color: white;
+    position: relative;
+    top: -30px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.txt4{
+    font-size:27px;
+    position: relative;
+    top: 33px;
+}
+.txt5{
+    position: relative;
+    font-family: 'Kanit', sans-serif;
+    top: 18px;
+    color: #E74C3C;
+    font-size: 23px;
+}
+.txt2{
+    position: relative;
+    top: 10px;
+}
+.rated-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rated-wrapper label{
+    color:black;
+}
+.cardcontainer:hover > .photo{
+    height: 200px;
+    animation: move1 0.5s ease both;
+}
+@keyframes move1{
+    0%{height: 300px}
+    100%{height: 200px}
+}
+.cardcontainer:hover > .content{
+    height: 200px;
+}
+.footer{
+    width: 80%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    position: relative;
+    top: -15px;
+}
+#heart{
+    cursor: pointer;
+}
+.like{
+    float: right;
+    font-size: 22px;
+    position: relative;
+    top: 20px;
+    color: #333333;
+}
+.fa-gratipay{
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.fa-gratipay:hover{
+    color: #E74C3C;
+}
+.txt3{
+    color: gray;
+    position: relative;
+    top: 18px;
+    font-size: 14px;
+}
+.comments{
+        float: right;
+        cursor: pointer;
+}
+.fa-clock, .fa-comments{
+        margin-right: 7px;
+}
+.cards {
+    display:flex;
+    flex-wrap:wrap;
+    /* https://stackoverflow.com/questions/48464444/how-to-display-3-items-per-row-in-flexbox */
+    padding: 20px calc((100% - (350px * 3)) / 2);
+    align-items:center
+}
+#trendingcontainer {
+}
+#featuredcontainer {
+    border:solid;
+    width: 400px;
+    height:700px;
+}
+#parentcontainer {
+    display:flex
+}

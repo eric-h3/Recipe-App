@@ -1,0 +1,39 @@
+.formcube {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(21, 25, 29);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+label.form-label {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.register {
+    display: "flex";
+    align-items: "center";
+}
+
+.button {
+    margin-top: 15px;
+}
+
+.labeltext {
+    color: white;
+}
+
+.error {
+    color: red;
+ }

@@ -1,0 +1,41 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.728);
+  color: white;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.avatar img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.info h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.info p {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.info ul {
+  list-style: none;
+  text-align: center;
+  display: flex;
+}
+
+.info ul li {
+  margin-right: 3rem;
+}

@@ -1,0 +1,390 @@
+{
+	"info": {
+		"_postman_id": "0ccce549-8262-459c-9786-0c53bae2081f",
+		"name": "CSC309 P2 Social",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "newUser",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-XSRF-TOKEN",
+						"value": "{{xsrf-token}}",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "Babeys",
+							"type": "default"
+						},
+						{
+							"key": "password1",
+							"value": "12341234",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "a@b.com",
+							"type": "default"
+						},
+						{
+							"key": "first_name",
+							"value": "ABEL",
+							"type": "default"
+						},
+						{
+							"key": "last_name",
+							"value": "JOHNSON",
+							"type": "default"
+						},
+						{
+							"key": "bio",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "phone_num",
+							"value": "999-999-9999",
+							"type": "default"
+						},
+						{
+							"key": "avi",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "password2",
+							"value": "12341234",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "12341234",
+							"type": "default"
+						},
+						{
+							"key": "uid",
+							"value": "1",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/social/profile/register/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"social",
+						"profile",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "abcdef",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "12341234",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/social/profile/login/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"social",
+						"profile",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "b@c.com",
+							"type": "default"
+						},
+						{
+							"key": "first_name",
+							"value": "Andrew",
+							"type": "default"
+						},
+						{
+							"key": "last_name",
+							"value": "JOHNSON",
+							"type": "default"
+						},
+						{
+							"key": "phone_num",
+							"value": "999-999-9999",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/social/profile/edit/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"social",
+						"profile",
+						"edit",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/social/profile/logout/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"social",
+						"profile",
+						"logout",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login for recipes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "abcdef",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "12341234",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/social/profile/login/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"social",
+						"profile",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newRecipe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "blah",
+							"type": "text"
+						},
+						{
+							"key": "diets",
+							"value": "aaa",
+							"type": "text"
+						},
+						{
+							"key": "cuisine",
+							"value": "bbb",
+							"type": "text"
+						},
+						{
+							"key": "ingredients",
+							"value": "nnn",
+							"type": "text"
+						},
+						{
+							"key": "serve",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/recipe/new/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"recipe",
+						"new",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "viewRecipe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/recipe/1/details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"recipe",
+						"1",
+						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/recipe/search/b/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"recipe",
+						"search",
+						"b",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editRecipe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "AAAa",
+							"type": "default"
+						},
+						{
+							"key": "serve",
+							"value": "2",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/recipe/1/edit/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"recipe",
+						"1",
+						"edit",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

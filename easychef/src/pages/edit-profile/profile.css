@@ -1,0 +1,131 @@
+/* https://www.bootdey.com/snippets/view/bs5-edit-profile-account-details#css */
+
+.img-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+}
+
+.card-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(21, 25, 29);
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.card-form-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-form-content {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group.input-inline {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.form-group.button-group {
+    display: flex;
+    justify-content: flex-end;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1976d2;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #135ba1;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1976d2;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-file-upload:hover {
+    background-color: #135ba1;
+}
+
+label {
+    color: white;
+}
+
+.error {
+    color: red;
+}
+
+.edit {
+    color: greenyellow;
+}
